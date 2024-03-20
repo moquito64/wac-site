@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Example on WOLF AND CROW</title>
-    <link>https://example.org/tags/example/</link>
+    <link>https://wolfandcrow.tech/tags/example/</link>
     <description>Recent content in Example on WOLF AND CROW</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 WOLF AND CROW</copyright>
-    <lastBuildDate>Sat, 16 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/example/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://wolfandcrow.tech/tags/example/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3D Printing</title>
-      <link>https://example.org/services/1710588742879-3d-printing/</link>
+      <link>https://wolfandcrow.tech/services/1710588742879-3d-printing/</link>
       <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/services/1710588742879-3d-printing/</guid>
+      <guid>https://wolfandcrow.tech/services/1710588742879-3d-printing/</guid>
       <description>Variable hourly rate</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/services/1710588742879-3d-printing/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://wolfandcrow.tech/services/1710588742879-3d-printing/featured.png" />
     </item>
     
     <item>
       <title>Dev Consulting</title>
-      <link>https://example.org/services/1710588767263-dev-consulting/</link>
+      <link>https://wolfandcrow.tech/services/1710588767263-dev-consulting/</link>
       <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/services/1710588767263-dev-consulting/</guid>
+      <guid>https://wolfandcrow.tech/services/1710588767263-dev-consulting/</guid>
       <description>Variable hourly rate</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/services/1710588767263-dev-consulting/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://wolfandcrow.tech/services/1710588767263-dev-consulting/featured.png" />
     </item>
     
     <item>
       <title>Infra Planning</title>
-      <link>https://example.org/services/1710588754849-infra-planning/</link>
+      <link>https://wolfandcrow.tech/services/1710588754849-infra-planning/</link>
       <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/services/1710588754849-infra-planning/</guid>
+      <guid>https://wolfandcrow.tech/services/1710588754849-infra-planning/</guid>
       <description>$150/hour Depending on size the hourly rate may vary.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/services/1710588754849-infra-planning/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://wolfandcrow.tech/services/1710588754849-infra-planning/featured.png" />
     </item>
     
   </channel>
