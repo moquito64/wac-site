@@ -1,4 +1,28 @@
-# Astro Starter Kit: Basics
+# Wac Site built using Astro
+
+## Updated 2025
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Normal Template Stuff Below:
 
 ```sh
 npm create astro@latest -- --template basics
