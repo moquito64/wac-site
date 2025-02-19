@@ -43,14 +43,14 @@ p {
 }
 
 .hero h1 {
-  font-family: 'Poppins', sans-serif; /* Use Poppins font */
-  font-size: 3rem; /* Larger font size for emphasis */
-  font-weight: 700; /* Bold weight */
-  color: var(--color-primary); /* Use primary Mocha color */
-  text-transform: uppercase; /* Make it uppercase for more impact */
-  letter-spacing: 2px; /* Space out the letters slightly for elegance */
+  font-family: 'Poppins', sans-serif; 
+  font-size: 3rem; 
+  font-weight: 700; 
+  color: var(--color-primary); 
+  text-transform: uppercase;   
+  letter-spacing: 2px;
   margin: 0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .center-nav {
@@ -92,18 +92,18 @@ p {
 
 .services h2 {
   margin-bottom: 2rem;
-  font-size: 2.5rem; /* Keep the header large */
-  color: var(--color-primary); /* Use the primary color */
-  font-weight: 700; /* Bold text for emphasis */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a softer effect */
+  font-size: 2.5rem;
+  color: var(--color-primary); 
+  font-weight: 700; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
   letter-spacing: 0.5px;
 }
 .services {
   display: flex;
-  flex-direction: column; /* Stack the items vertically */
+  flex-direction: column;
   justify-content: center;
-  align-items: center; /* Center the items */
-  gap: 2rem; /* Space between each service item */
+  align-items: center; 
+  gap: 2rem;
   padding: 3rem 1rem;
 }
 
@@ -112,8 +112,8 @@ p {
   padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
-  width: 100%; /* Full width inside the section */
-  max-width: 350px; /* Limit the width of each service box */
+  width: 100%;   
+  max-width: 350px;  
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out;
 }
