@@ -1,6 +1,8 @@
 ---
-import '../styles/global.css'
-import ContactUsScript from '../components/ContactUs.astro'
+import '../styles/global.css';
+import ContactUsScript from '../components/ContactUs.astro';
+import { Image } from 'astro:assets';
+import logoImg from '../assets/logo.png';
 ---
 <html lang="en">
 <head>
@@ -13,7 +15,7 @@ import ContactUsScript from '../components/ContactUs.astro'
 <body>
   <main>
     <section class="hero">
-      <img src='../assets/logo.png' alt="Wolf and Crow Logo" class="logo" type="image/png"/>
+	    <Image src={logoImg} alt="Wolf and Crow Logo" class="logo" type="image/png"/>
       <h1>Wolf and Crow</h1>
       <p>Empowering Hawaiian businesses with over 10 years of IT expertise.</p>
       <nav class="center-nav">
