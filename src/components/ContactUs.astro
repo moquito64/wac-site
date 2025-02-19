@@ -1,0 +1,160 @@
+---
+---
+<style>
+    /* Catppuccin Mocha Colors */
+    :root {
+        --base: #1e1e2e;
+        --surface0: #313244;
+        --surface1: #45475a;
+        --surface2: #585b70;
+        --text: #cdd6f4;
+        --overlay: rgba(30, 30, 46, 0.85);
+        --blue: #89b4fa;
+        --green: #a6e3a1;
+        --red: #f38ba8;
+        --lavender: #b4befe;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--base);
+        color: var(--text);
+    }
+
+    /* Contact Button */
+    .contact-btn {
+        display: inline-block;
+        padding: 12px 24px;
+        text-decoration: none;
+        color: var(--base);
+        background-color: var(--lavender);
+        border-radius: 8px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+    }
+
+    .contact-btn:hover {
+        background-color: var(--blue);
+        color: var(--base);
+    }
+
+    /* Modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--overlay);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: var(--surface0);
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+        width: 300px;
+    }
+
+    .modal p {
+        color: var(--text);
+        font-size: 18px;
+    }
+
+    /* Modal Buttons */
+    .modal button {
+        margin: 10px;
+        padding: 12px 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: background 0.2s ease-in-out;
+    }
+
+    .call-btn {
+        background-color: var(--green);
+        color: var(--base);
+    }
+
+    .call-btn:hover {
+        background-color: #8bc38e;
+    }
+
+    .email-btn {
+        background-color: var(--blue);
+        color: var(--base);
+    }
+
+    .email-btn:hover {
+        background-color: #74a2e3;
+    }
+
+    .close-btn {
+        background-color: var(--red);
+        color: var(--base);
+    }
+
+    .close-btn:hover {
+        background-color: #e87a92;
+    }
+</style>
+
+<!-- Contact Us Button -->
+<button class="contact-btn" id="contactBtn">Contact Us Now</button>
+
+<!-- Modal -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <p>How would you like to contact us?</p>
+        <button class="call-btn" id="callBtn">Call📞</button>
+        <button class="email-btn" id="emailBtn">Email📧</button>
+        <button class="close-btn" id="closeBtn">Cancel❌</button>
+    </div>
+</div>
+
+<script>
+    window.onload = function () {
+        const modal = document.getElementById("contactModal");
+        const contactBtn = document.getElementById("contactBtn");
+        const closeBtn = document.getElementById("closeBtn");
+        const callBtn = document.getElementById("callBtn");
+        const emailBtn = document.getElementById("emailBtn");
+
+        if (!modal || !contactBtn || !closeBtn || !callBtn || !emailBtn) {
+            console.error("One or more elements not found.");
+            return;
+        }
+
+        contactBtn.addEventListener("click", () => {
+            modal.style.display = "flex";
+        });
+
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        callBtn.addEventListener("click", () => {
+            window.location.href = "tel:+11234567890"; // Replace with your phone number
+        });
+
+        emailBtn.addEventListener("click", () => {
+            window.location.href = "mailto:example@email.com"; // Replace with your email
+        });
+
+        // Close modal if user clicks outside of it
+        window.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    };
+</script>
+

@@ -1,0 +1,137 @@
+:root {
+  --color-background: #1e1e2e;
+  --color-surface: #2e2e3e;
+  --color-text: #cdd6f4;
+  --color-sub-text: #bac2de;
+  --color-primary: #cba6f7;
+  --color-secondary: #f28fad;
+  --color-accent: #a6e3a1;
+  --base: #1e1e2e;
+  --surface0: #313244;
+  --surface1: #45475a;
+  --surface2: #585b70;
+  --text: #cdd6f4;
+  --overlay: rgba(30, 30, 46, 0.85);
+  --blue: #89b4fa;
+  --green: #a6e3a1;
+  --red: #f38ba8;
+  --lavender: #b4befe;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+p {
+  color: var(--color-sub-text);
+}
+
+.hero {
+  background-color: var(--color-surface);
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero .logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  font-size: 3rem; /* Larger font size for emphasis */
+  font-weight: 700; /* Bold weight */
+  color: var(--color-primary); /* Use primary Mocha color */
+  text-transform: uppercase; /* Make it uppercase for more impact */
+  letter-spacing: 2px; /* Space out the letters slightly for elegance */
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.center-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.center-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+}
+
+ .center-nav b {
+  display: inline-block;
+  padding: 10px 20px; 
+  text-decoration: none;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.center-nav b:hover {
+        background-color: var(--blue);
+        color: var(--base);
+}
+
+.about, .services {
+  padding: 2rem;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem; /* Keep the header large */
+  color: var(--color-primary); /* Use the primary color */
+  font-weight: 700; /* Bold text for emphasis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a softer effect */
+  letter-spacing: 0.5px;
+}
+.services {
+  display: flex;
+  flex-direction: column; /* Stack the items vertically */
+  justify-content: center;
+  align-items: center; /* Center the items */
+  gap: 2rem; /* Space between each service item */
+  padding: 3rem 1rem;
+}
+
+.service {
+  background-color: var(--color-surface);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%; /* Full width inside the section */
+  max-width: 350px; /* Limit the width of each service box */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+footer {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  text-align: center;
+  padding: 1rem;
+}
