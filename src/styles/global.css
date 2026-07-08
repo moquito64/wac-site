@@ -1,26 +1,17 @@
-/* Catppuccin Mocha palette */
+/* Design tokens — ink, parchment, brass, starlight */
 :root {
-  --base: #1e1e2e;
-  --mantle: #181825;
-  --crust: #11111b;
-  --surface0: #313244;
-  --surface1: #45475a;
-  --surface2: #585b70;
-  --text: #cdd6f4;
-  --subtext: #bac2de;
-  --muted: #a6adc8;
-  --lavender: #b4befe;
-  --blue: #89b4fa;
-  --sapphire: #74c7ec;
-  --mauve: #cba6f7;
-  --pink: #f5c2e7;
-  --green: #a6e3a1;
-  --peach: #fab387;
-  --red: #f38ba8;
-  --yellow: #f9e2af;
+  --ink: #0c0d10;
+  --ink-raised: #111318;
+  --hairline: rgba(230, 227, 220, 0.09);
+  --hairline-strong: rgba(230, 227, 220, 0.18);
+  --text: #e6e3dc;
+  --text-muted: #a3a099;
+  --text-faint: #71706a;
+  --brass: #c2a878;
+  --starlight: #93a5b8;
 
-  --font-display: 'Poppins', system-ui, sans-serif;
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-serif: 'EB Garamond', 'Iowan Old Style', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 
@@ -36,12 +27,14 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-weight: 400;
-  line-height: 1.6;
-  background-color: var(--base);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  background-color: var(--ink);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 img {
@@ -49,10 +42,18 @@ img {
 }
 
 a {
-  color: var(--blue);
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--hairline-strong);
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 0.2s ease, color 0.2s ease;
+}
+
+a:hover {
+  text-decoration-color: var(--brass);
 }
 
 ::selection {
-  background: var(--mauve);
-  color: var(--crust);
+  background: var(--brass);
+  color: var(--ink);
 }

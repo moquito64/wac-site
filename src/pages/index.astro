@@ -6,71 +6,97 @@ import logoImg from '../assets/logo.png';
 
 <Layout>
   <main>
-    <section class="hero">
-      <Image src={logoImg} alt="Wolf and crow emblem" class="logo" width="180" loading="eager" />
-      <p class="alias"><span>wolf</span> · <span>moquito64</span></p>
+    <header class="hero">
+      <Image src={logoImg} alt="Wolf and crow emblem" class="emblem" width="72" loading="eager" />
+      <p class="kicker">wolf · moquito64</p>
       <h1>Sebastian Javier Blanchette</h1>
-      <p class="tagline">
-        <span class="facet-artist">Artist</span>
-        <span class="dot">·</span>
-        <span class="facet-programmer">Programmer</span>
-        <span class="dot">·</span>
-        <span class="facet-brainiac">Brainiac</span>
-        <span class="dot">·</span>
-        <span class="facet-poet">Poet</span>
+      <p class="role">IT Specialist — Systems Administrator — Programmer</p>
+      <p class="statement">
+        I build systems that keep working after everyone stops watching,
+        and I'm drawn to the places where technology meets mythology,
+        philosophy, and story.
       </p>
-      <nav class="hero-nav">
-        <a href="#facets">What I do</a>
-        <a href="#poetry">Poetry</a>
-        <a href="#contact">Say hello</a>
-      </nav>
-    </section>
+      <p class="motto">acta non verba</p>
+    </header>
 
-    <section class="about">
-      <h2>About</h2>
+    <section id="about">
+      <p class="section-label">I &nbsp;·&nbsp; About</p>
+      <h2>A quiet practice</h2>
       <p>
-        I'm Sebastian — wolf to friends, <code>moquito64</code> on the wire. I spent over a decade
-        in Hawaii building and securing technology for other people. These days I build for the
-        love of the craft: code that works, art that bites, ideas that won't sit still, and poems
-        that keep the vigil between all three.
+        By trade I keep infrastructure alive: servers, networks, backups, the
+        unglamorous machinery that everything else depends on. By temperament
+        I'm analytical and introspective — I want to know not just how a
+        system fails, but why people built it that way in the first place.
+      </p>
+      <p>
+        Off the clock the practice continues at a different altitude: a home
+        lab that never stops evolving, self-hosted services in place of rented
+        ones, automation that buys back time, science fiction that spends it
+        well. The thread through all of it is the same — take a thing apart,
+        understand it honestly, put it back together better.
       </p>
     </section>
 
-    <section class="facets" id="facets">
-      <h2>Four Faces</h2>
-      <div class="facet-grid">
-        <article class="facet" style="--accent: var(--pink)">
-          <h3>Artist</h3>
-          <p>
-            Line, ink, and pixel. I draw what the wolf sees and the crow remembers — emblems,
-            creatures, and worlds that didn't exist until they had to.
-          </p>
+    <section id="craft">
+      <p class="section-label">II &nbsp;·&nbsp; Craft</p>
+      <h2>What I do</h2>
+      <ol class="craft-list">
+        <li>
+          <span class="index">01</span>
+          <div>
+            <h3>Systems administration</h3>
+            <p>Infrastructure that stays up, backed up, and boring — the highest compliment a system can earn.</p>
+          </div>
+        </li>
+        <li>
+          <span class="index">02</span>
+          <div>
+            <h3>Programming</h3>
+            <p>Small, sharp tools and honest code. Nothing wasted, everything load-bearing.</p>
+          </div>
+        </li>
+        <li>
+          <span class="index">03</span>
+          <div>
+            <h3>Self-hosting &amp; home lab</h3>
+            <p>Owning my own services end to end, because understanding a thing means running it yourself.</p>
+          </div>
+        </li>
+        <li>
+          <span class="index">04</span>
+          <div>
+            <h3>Automation</h3>
+            <p>If it must be done twice, it should be done by a machine the third time.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="symbols">
+      <p class="section-label">III &nbsp;·&nbsp; Symbols</p>
+      <h2>A small bestiary</h2>
+      <div class="symbol-grid">
+        <article>
+          <h3>The Wolf <span class="latin">lupus</span></h3>
+          <p>Persistence. The patience to stay on a problem's trail long after it goes cold.</p>
         </article>
-        <article class="facet" style="--accent: var(--green)">
-          <h3>Programmer</h3>
-          <p>
-            Ten-plus years from bare metal to the cloud. Infrastructure, security, and software —
-            I like systems I can take apart and code that earns its keep.
-          </p>
+        <article>
+          <h3>The Crow <span class="latin">corvus</span></h3>
+          <p>Curiosity. The instinct to collect bright ideas from unrelated fields and see what they open.</p>
         </article>
-        <article class="facet" style="--accent: var(--sapphire)">
-          <h3>Brainiac</h3>
-          <p>
-            Insatiably curious. Networks, ciphers, hardware, history, whatever's under the next
-            rock. If it can be understood, I want to understand it twice.
-          </p>
+        <article>
+          <h3>The Mountain <span class="latin">mons</span></h3>
+          <p>Reliability. Weather passes; the shape underneath does not move.</p>
         </article>
-        <article class="facet" style="--accent: var(--mauve)">
-          <h3>Poet</h3>
-          <p>
-            Words are the oldest technology I maintain. I write verse the way I write code:
-            nothing wasted, everything load-bearing.
-          </p>
+        <article>
+          <h3>The North Star <span class="latin">stella polaris</span></h3>
+          <p>Truth over hype. A fixed point to navigate by when everything else is trend.</p>
         </article>
       </div>
     </section>
 
-    <section class="poetry" id="poetry">
+    <section id="verse">
+      <p class="section-label">IV &nbsp;·&nbsp; Verse</p>
       <h2>Vigil</h2>
       <blockquote class="poem">
         <p>
@@ -85,271 +111,298 @@ import logoImg from '../assets/logo.png';
           half hunger, half a pair of wings,<br />
           and everything I've seen.
         </p>
-        <footer>— wolf</footer>
       </blockquote>
-      <p class="poetry-more">
-        More verse at <a href="https://shrtstry.com">shrtstry.com</a>
+      <p class="verse-more">
+        More at <a href="https://shrtstry.com">shrtstry.com</a>
       </p>
     </section>
   </main>
 
-  <footer class="site-footer" id="contact">
-    <h2>Say hello</h2>
-    <a class="contact-btn" href="mailto:sblanchette@wolfandcrow.tech">sblanchette@wolfandcrow.tech</a>
-    <nav class="social">
-      <a href="https://github.com/moquito64">GitHub</a>
-      <a href="https://www.linkedin.com/in/sebastianblanchette/">LinkedIn</a>
-      <a href="https://shrtstry.com">Poetry Blog</a>
-    </nav>
-    <p class="fine-print">&copy; 2026 Sebastian Javier Blanchette. All rights reserved.</p>
+  <footer id="contact">
+    <div class="footer-inner">
+      <p class="section-label">V &nbsp;·&nbsp; Correspondence</p>
+      <p class="footer-lede">
+        The best way to reach me is the oldest one.
+      </p>
+      <p class="email">
+        <a href="mailto:sblanchette@wolfandcrow.tech">sblanchette@wolfandcrow.tech</a>
+      </p>
+      <nav class="social">
+        <a href="https://github.com/moquito64">GitHub</a>
+        <a href="https://www.linkedin.com/in/sebastianblanchette/">LinkedIn</a>
+        <a href="https://shrtstry.com">shrtstry</a>
+      </nav>
+      <p class="colophon">
+        ✦ &nbsp;per aspera ad astra
+        <span class="coords">α UMi · RA 02ʰ 31ᵐ · Dec +89° 15′</span>
+      </p>
+      <p class="fine-print">&copy; 2026 Sebastian Javier Blanchette</p>
+    </div>
   </footer>
 </Layout>
 
 <style>
   main {
-    max-width: 60rem;
+    max-width: 41rem;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
 
   section {
-    padding: 3.5rem 0;
+    padding: 5.5rem 0 0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
   }
 
   h2 {
     font-size: 2rem;
-    font-weight: 700;
-    color: var(--lavender);
-    letter-spacing: 0.04em;
-    text-align: center;
-    margin: 0 0 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section > p,
+  #about p {
+    color: var(--text-muted);
+    margin: 0 0 1.25rem;
+  }
+
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    border-top: 1px solid var(--hairline);
+    padding-top: 1.25rem;
+    margin: 0 0 2rem;
   }
 
   /* Hero */
   .hero {
-    min-height: 88vh;
+    min-height: 82vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 4rem 0 3rem;
-    background:
-      radial-gradient(ellipse 70% 50% at 50% 0%, rgba(203, 166, 247, 0.12), transparent 70%);
+    padding: 6rem 0 3rem;
   }
 
-  .logo {
-    width: 180px;
+  .emblem {
+    width: 72px;
     height: auto;
-    margin-bottom: 1rem;
-    filter: drop-shadow(0 0 24px rgba(137, 180, 250, 0.25));
+    margin-bottom: 2rem;
+    opacity: 0.9;
   }
 
-  .alias {
+  .kicker {
     font-family: var(--font-mono);
-    font-size: 0.95rem;
-    color: var(--muted);
-    letter-spacing: 0.12em;
-    margin: 0 0 0.25rem;
-  }
-
-  .alias span {
-    color: var(--peach);
+    font-size: 0.8rem;
+    letter-spacing: 0.22em;
+    color: var(--text-faint);
+    margin: 0 0 1rem;
   }
 
   h1 {
-    font-size: clamp(2.1rem, 6vw, 3.5rem);
-    font-weight: 700;
-    line-height: 1.15;
-    margin: 0;
-    background: linear-gradient(100deg, var(--blue), var(--mauve), var(--pink));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+    font-size: clamp(2.4rem, 6vw, 3.6rem);
+    letter-spacing: -0.01em;
   }
 
-  .tagline {
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin: 1rem 0 0;
-  }
-
-  .tagline .dot {
-    color: var(--surface2);
-    margin: 0 0.35em;
-  }
-
-  .facet-artist { color: var(--pink); }
-  .facet-programmer { color: var(--green); }
-  .facet-brainiac { color: var(--sapphire); }
-  .facet-poet { color: var(--mauve); }
-
-  .hero-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2.5rem;
-  }
-
-  .hero-nav a {
-    color: var(--text);
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0.6rem 1.4rem;
-    border: 1px solid var(--surface1);
-    border-radius: 999px;
-    background: rgba(49, 50, 68, 0.5);
-    transition: border-color 0.2s, transform 0.2s;
-  }
-
-  .hero-nav a:hover {
-    border-color: var(--mauve);
-    transform: translateY(-2px);
-  }
-
-  /* About */
-  .about p {
-    max-width: 42rem;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.1rem;
-    color: var(--subtext);
-  }
-
-  .about code {
+  .role {
     font-family: var(--font-mono);
-    font-size: 0.95em;
-    color: var(--peach);
-    background: var(--surface0);
-    padding: 0.1em 0.4em;
-    border-radius: 6px;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    color: var(--starlight);
+    margin: 1.25rem 0 0;
   }
 
-  /* Facets */
-  .facet-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 1.25rem;
+  .statement {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 1.6;
+    color: var(--text);
+    max-width: 34rem;
+    margin: 2rem 0 0;
   }
 
-  .facet {
-    background: var(--mantle);
-    border: 1px solid var(--surface0);
-    border-top: 3px solid var(--accent);
-    border-radius: 12px;
-    padding: 1.5rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  .motto {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    color: var(--brass);
+    margin: 2.5rem 0 0;
   }
 
-  .facet:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 28px rgba(17, 17, 27, 0.6);
-  }
-
-  .facet h3 {
-    margin: 0 0 0.5rem;
-    font-size: 1.2rem;
-    color: var(--accent);
-    letter-spacing: 0.05em;
-  }
-
-  .facet p {
+  /* Craft */
+  .craft-list {
+    list-style: none;
     margin: 0;
-    color: var(--subtext);
-    font-size: 0.98rem;
+    padding: 0;
   }
 
-  /* Poetry */
-  .poetry {
-    text-align: center;
+  .craft-list li {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--hairline);
   }
 
+  .craft-list li:last-child {
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .craft-list .index {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-faint);
+    padding-top: 0.4rem;
+  }
+
+  .craft-list h3 {
+    font-size: 1.25rem;
+  }
+
+  .craft-list p {
+    margin: 0.35rem 0 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  /* Symbols */
+  .symbol-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--hairline);
+    border-left: 1px solid var(--hairline);
+  }
+
+  .symbol-grid article {
+    border-right: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    padding: 1.75rem 1.5rem;
+  }
+
+  .symbol-grid h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .latin {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-left: 0.6em;
+  }
+
+  .symbol-grid p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 600px) {
+    .symbol-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Verse */
   .poem {
     font-family: var(--font-serif);
     font-style: italic;
-    font-size: clamp(1.25rem, 3vw, 1.6rem);
-    line-height: 1.7;
+    font-size: 1.25rem;
+    line-height: 1.8;
     color: var(--text);
-    margin: 0 auto;
-    max-width: 34rem;
-    padding: 2rem 1.5rem;
-    border-block: 1px solid var(--surface0);
+    margin: 0;
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--hairline-strong);
   }
 
   .poem p {
     margin: 0 0 1.4em;
   }
 
-  .poem footer {
-    font-style: normal;
-    font-family: var(--font-mono);
+  .poem p:last-child {
+    margin-bottom: 0;
+  }
+
+  .verse-more {
     font-size: 0.9rem;
-    color: var(--muted);
-  }
-
-  .poetry-more {
+    color: var(--text-faint);
     margin-top: 1.5rem;
-    color: var(--subtext);
-  }
-
-  .poetry-more a {
-    color: var(--mauve);
-    text-decoration-color: var(--surface2);
   }
 
   /* Footer */
-  .site-footer {
-    text-align: center;
-    padding: 3.5rem 1.5rem 2.5rem;
-    background: var(--mantle);
-    border-top: 1px solid var(--surface0);
-    margin-top: 2rem;
+  footer {
+    margin-top: 6rem;
+    border-top: 1px solid var(--hairline);
+    background: var(--ink-raised);
   }
 
-  .contact-btn {
-    display: inline-block;
+  .footer-inner {
+    max-width: 41rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 3rem;
+  }
+
+  .footer-inner .section-label {
+    border-top: none;
+    padding-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-lede {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 0 0 0.75rem;
+  }
+
+  .email {
+    margin: 0 0 2rem;
+  }
+
+  .email a {
     font-family: var(--font-mono);
-    font-weight: 600;
-    color: var(--crust);
-    background: var(--lavender);
-    text-decoration: none;
-    padding: 0.8rem 1.8rem;
-    border-radius: 10px;
-    transition: background 0.2s;
-  }
-
-  .contact-btn:hover {
-    background: var(--blue);
+    font-size: 0.95rem;
   }
 
   .social {
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
   }
 
   .social a {
-    color: var(--subtext);
-    text-decoration: none;
-    font-weight: 600;
-    border-bottom: 2px solid var(--surface1);
-    padding-bottom: 2px;
-    transition: color 0.2s, border-color 0.2s;
+    font-size: 0.9rem;
+    color: var(--text-muted);
   }
 
-  .social a:hover {
-    color: var(--blue);
-    border-color: var(--blue);
+  .colophon {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    color: var(--brass);
+    margin: 0 0 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+
+  .coords {
+    color: var(--text-faint);
   }
 
   .fine-print {
-    margin-top: 2rem;
-    font-size: 0.85rem;
-    color: var(--muted);
+    font-size: 0.8rem;
+    color: var(--text-faint);
+    margin: 0;
   }
 </style>
