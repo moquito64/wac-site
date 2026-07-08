@@ -1,72 +1,37 @@
-# Wac Site built using Astro
+# wolfandcrow.tech
 
-## Updated 2025
+Personal profile site of **Sebastian Javier Blanchette** (wolf, moquito64) —
+artist, programmer, brainiac, poet.
 
+A single-page, fully static [Astro](https://astro.build) site in the
+Catppuccin Mocha palette. No frameworks, no client-side JS — just the hero,
+an about section, four facet cards, a poem, and contact links.
 
+- **Poetry blog:** [shrtstry.com](https://shrtstry.com)
+- **GitHub:** [moquito64](https://github.com/moquito64)
+- **LinkedIn:** [sebastianblanchette](https://www.linkedin.com/in/sebastianblanchette/)
+- **Email:** sblanchette@wolfandcrow.tech
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Normal Template Stuff Below:
-
-```sh
-npm create astro@latest -- --template basics
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Structure
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+src/
+├── layouts/Layout.astro    # document shell: meta/OG tags, fonts, global.css
+├── pages/index.astro       # the entire site, styles scoped in-file
+├── styles/global.css       # design tokens (Catppuccin colors, fonts)
+└── assets/logo.png         # wolf-and-crow emblem, optimized via astro:assets
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Commands
 
-## 🧞 Commands
+| Command           | Action                                      |
+| :---------------- | :------------------------------------------ |
+| `npm install`     | Install dependencies                        |
+| `npm run dev`     | Start dev server at `localhost:4321`        |
+| `npm run build`   | Build the static site to `./dist/`          |
+| `npm run preview` | Preview the production build locally        |
 
-All commands are run from the root of the project, from a terminal:
+## Deploy
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Hosted free on Cloudflare Pages: build command `npm run build`, output
+directory `dist`. Pushing to `master` triggers a deploy.

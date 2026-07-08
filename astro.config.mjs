@@ -1,9 +1,8 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
-import cloudflare from '@astrojs/cloudflare';
-
+// Static build — Cloudflare Pages serves ./dist directly, no worker needed.
 // https://astro.build/config
 export default defineConfig({
-  adapter: cloudflare()
+  site: 'https://wolfandcrow.tech',
 });
