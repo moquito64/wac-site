@@ -11,7 +11,7 @@ No frameworks, no client-side JS.
 - **Poetry blog:** [shrtstry.com](https://shrtstry.com)
 - **GitHub:** [moquito64](https://github.com/moquito64)
 - **LinkedIn:** [sebastianblanchette](https://www.linkedin.com/in/sebastianblanchette/)
-- **Email:** sblanchette@wolfandcrow.tech
+- **Email:** sblanchette@penwulf.com
 
 ## Structure
 
